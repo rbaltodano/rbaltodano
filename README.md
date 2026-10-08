@@ -1,38 +1,20 @@
-# Angrove
+# Ryan Baltodano
 
-**Private, on-device AI for study and reflection.**
+Applied AI engineer and product designer building **[Angrove](https://angrove.app)**, a free, private iOS study app that runs its language model entirely on the iPhone.
 
-Angrove is a private, local-first iOS study and conversation environment for
-serious questions about philosophy, theology, Scripture, meaning, and human
-flourishing.
+## What I'm working on
 
-Visit [angrove.app](https://angrove.app), or explore the three project repositories:
+Angrove answers questions about philosophy, theology, and history from a curated library of primary sources, cites them, and says so when a source is missing instead of inventing a quotation. Generation, retrieval, and the Insight Tree (a semantic map of saved ideas) all run on-device; there is no model server.
 
-| Repository | Description |
-| --- | --- |
-| [Angrove iOS](https://github.com/rbaltodano/Aquinas-iOS) | The SwiftUI client and local-first study experience. |
-| [Angrove Backend](https://github.com/rbaltodano/Aquinas-Backend) | Offline tooling for corpus preparation, model conversion, retrieval, and evaluation. |
-| [Angrove Foundations](https://github.com/rbaltodano/Aquinas-Foundations) | Shared product, design, architecture, and model-integration documentation. |
+- On-device Gemma 4 through LiteRT-LM, with Core ML MiniLM embeddings for local retrieval
+- SwiftUI app with a Figma-based design system
+- Evaluation-driven decisions: in an 80-case comparison, native model thinking gave the same pass rate (74/80) at roughly double the latency, so it ships off by default
+- In active development and not yet publicly released
 
-## Start here
+## Links
 
-Visit the [Angrove iOS repository](https://github.com/rbaltodano/Aquinas-iOS)
-to see the product experience, or read the [Foundations
-documentation](https://github.com/rbaltodano/Aquinas-Foundations) for the overall
-vision and architecture.
+- [angrove.app](https://angrove.app)
+- [Case studies: architecture, evaluation, and engineering decisions](https://angrove.app/case-study.html)
+- [Résumé (PDF)](https://angrove.app/assets/Ryan-Baltodano-Resume.pdf)
 
-## Project status
-
-Angrove is an active personal research and product-development project. It is
-designed around local-first use, on-device model execution, source-grounded
-study, and an evolving visual map of ideas called the Insight Tree. A key part
-of the app is its use of local semantic tools to explore vector space: ideas
-are embedded as vectors, compared for relatedness, and arranged so users can
-see how concepts interact rather than only reading them in a linear chat.
-
-The project is not currently a hosted consumer service. Some model weights,
-corpora, and generated assets are maintained separately from the source code.
-
-## About
-
-Built by [Ryan Baltodano](https://github.com/rbaltodano).
+Tampa, FL · Open to applied AI and iOS engineering roles
