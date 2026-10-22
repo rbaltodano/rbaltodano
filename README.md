@@ -1,20 +1,44 @@
 # Ryan Baltodano
 
-Applied AI engineer and product designer building **[Angrove](https://angrove.app)**, a free, private iOS study app that runs its language model entirely on the iPhone.
+Applied AI engineer and product designer building **[Angrove](https://angrove.app)**, a free, private study app for iPhone and Mac that runs its language model entirely on the device.
+
+**[Try the iPhone beta on TestFlight](https://testflight.apple.com/join/qHDFeAUa)** · [Watch the 1:49 demo](https://angrove.app/case-study.html#demo-conversation) · [Résumé (PDF)](https://angrove.app/assets/Ryan-Baltodano-Resume.pdf)
 
 ## What I'm working on
 
-Angrove answers questions about philosophy, theology, and history from a curated library of primary sources, cites them, and says so when a source is missing instead of inventing a quotation. Generation, retrieval, and the Insight Tree (a semantic map of saved ideas) all run on-device; there is no model server.
+<a href="https://github.com/rbaltodano/Angrove-iOS">
+  <img src="https://raw.githubusercontent.com/rbaltodano/Angrove-iOS/main/Documentation/Screenshots/case-study-2026-10-05/insight-map.jpg" alt="Angrove's Insight Tree: a semantic map of saved ideas" width="220" align="right">
+</a>
 
-- On-device Gemma 4 through LiteRT-LM, with Core ML MiniLM embeddings for local retrieval
-- SwiftUI app with a Figma-based design system
+Angrove answers questions about philosophy, theology, and history from a curated library of primary sources, cites them, and says so when a source is missing instead of inventing a quotation. Generation, retrieval, and the Insight Tree (a semantic map of saved ideas) all run on-device; there is no model server and no account.
+
+- On-device Gemma 4 E4B through LiteRT-LM, with Core ML MiniLM embeddings retrieving from 51,836 passages across 37 bundled works
+- SwiftUI iPhone app and a native Mac app sharing one codebase, with a Figma-based design system
+- AES-256-GCM encrypted local storage with Keychain-protected keys
 - Evaluation-driven decisions: in an 80-case comparison, native model thinking gave the same pass rate (74/80) at roughly double the latency, so it ships off by default
-- In active development and not yet publicly released
+- iPhone public beta on TestFlight, App Store release next; Mac app in progress
 
-## Links
+<br clear="right">
 
-- [angrove.app](https://angrove.app)
+## Repositories
+
+| Repository | What it is |
+| --- | --- |
+| [Angrove-iOS](https://github.com/rbaltodano/Angrove-iOS) | The iPhone and Mac apps: on-device runtime, retrieval, encrypted persistence, and the Insight Tree |
+| [Angrove-Foundations](https://github.com/rbaltodano/Angrove-Foundations) | Product, design, and model-integration documentation, plus case studies |
+| [Angrove-Backend](https://github.com/rbaltodano/Angrove-Backend) | Offline Python tooling: corpus preparation, model conversion, and evaluation |
+
+## Read more
+
 - [Case studies: architecture, evaluation, and engineering decisions](https://angrove.app/case-study.html)
-- [Résumé (PDF)](https://angrove.app/assets/Ryan-Baltodano-Resume.pdf)
+- [Technical case study](https://github.com/rbaltodano/Angrove-iOS/blob/main/Documentation/Case-Study.md) and [evaluation methodology](https://github.com/rbaltodano/Angrove-iOS/blob/main/Documentation/Evaluation.md)
+- [Development notes](https://angrove.app/blog/): dated experiments with methods and limitations
+
+## What I work with
+
+- **Apple platforms:** Swift, SwiftUI, Swift Testing, Xcode, App Store and TestFlight delivery
+- **On-device ML:** LiteRT-LM, Core ML, MLX, quantization, model evaluation
+- **Retrieval:** sentence embeddings, vector similarity, source-grounded generation
+- **Tooling:** Python, GitHub Actions, Figma
 
 Tampa, FL · Open to applied AI and iOS engineering roles
