@@ -1,18 +1,24 @@
-# Angrove
+# Ryan Baltodano
 
-**Private, on-device AI for study and reflection.**
+Applied AI engineer and product designer building **[Angrove](https://angrove.app)**, a free, private study app for iPhone and Mac that runs its language model entirely on the device.
 
-Angrove is a private, local-first iPhone and Mac study and conversation environment for
-serious questions about philosophy, theology, Scripture, meaning, and human
-flourishing.
+**[Try the iPhone beta on TestFlight](https://testflight.apple.com/join/qHDFeAUa)** · [Watch the 1:49 demo](https://angrove.app/case-study.html#demo-conversation) · [Résumé (PDF)](https://angrove.app/assets/Ryan-Baltodano-Resume.pdf)
 
-Visit [angrove.app](https://angrove.app), or explore the three project repositories:
+## What I'm working on
 
-| Repository | Description |
-| --- | --- |
-| [Angrove iOS](https://github.com/rbaltodano/Angrove-iOS) | The SwiftUI iPhone app and native Mac study workspace. |
-| [Angrove Backend](https://github.com/rbaltodano/Angrove-Backend) | Offline tooling for corpus preparation, model conversion, retrieval, and evaluation. |
-| [Angrove Foundations](https://github.com/rbaltodano/Angrove-Foundations) | Shared product, design, architecture, and model-integration documentation. |
+<a href="https://github.com/rbaltodano/Angrove-iOS">
+  <img src="https://raw.githubusercontent.com/rbaltodano/Angrove-iOS/main/Documentation/Screenshots/case-study-2026-10-05/insight-map.jpg" alt="Angrove's Insight Tree: a semantic map of saved ideas" width="220" align="right">
+</a>
+
+Angrove answers questions about philosophy, theology, and history from a curated library of primary sources, cites them, and says so when a source is missing instead of inventing a quotation. Generation, retrieval, and the Insight Tree (a semantic map of saved ideas) all run on-device; there is no model server and no account.
+
+- On-device Gemma 4 E4B through LiteRT-LM, with Core ML MiniLM embeddings retrieving from 51,836 passages across 37 bundled works
+- SwiftUI iPhone app and a native Mac app sharing one codebase, with a Figma-based design system
+- AES-256-GCM encrypted local storage with Keychain-protected keys
+- Evaluation-driven decisions: in an 80-case comparison, native model thinking gave the same pass rate (74/80) at roughly double the latency, so it ships off by default
+- iPhone public beta on TestFlight, App Store release next; Mac app in progress
+
+<br clear="right">
 
 ## See the app
 
@@ -29,25 +35,25 @@ October 22, 2026 captures from the iPhone app and native Mac app in development.
 
 [Watch: Lay your ideas out](https://github.com/rbaltodano/Angrove-iOS/blob/main/Documentation/Screenshots/2026-10-22/lay-your-ideas-out.mp4) · [Watch: Learn easier](https://github.com/rbaltodano/Angrove-iOS/blob/main/Documentation/Screenshots/2026-10-22/learn-easier.mp4) · [All screenshots and recordings](https://github.com/rbaltodano/Angrove-iOS/blob/main/Documentation/Screenshots/2026-10-22/README.md)
 
-## Start here
+## Repositories
 
-Visit the [Angrove iOS repository](https://github.com/rbaltodano/Angrove-iOS)
-to see the product experience, or read the [Foundations
-documentation](https://github.com/rbaltodano/Angrove-Foundations) for the overall
-vision and architecture.
+| Repository | What it is |
+| --- | --- |
+| [Angrove-iOS](https://github.com/rbaltodano/Angrove-iOS) | The iPhone and Mac apps: on-device runtime, retrieval, encrypted persistence, and the Insight Tree |
+| [Angrove-Foundations](https://github.com/rbaltodano/Angrove-Foundations) | Product, design, and model-integration documentation, plus case studies |
+| [Angrove-Backend](https://github.com/rbaltodano/Angrove-Backend) | Offline Python tooling: corpus preparation, model conversion, and evaluation |
 
-## Project status
+## Read more
 
-Angrove is an active personal research and product-development project. It is
-designed around local-first use, on-device model execution, source-grounded
-study, and an evolving visual map of ideas called the Insight Tree. A key part
-of the app is its use of local semantic tools to explore vector space: ideas
-are embedded as vectors, compared for relatedness, and arranged so users can
-see how concepts interact rather than only reading them in a linear chat.
+- [Case studies: architecture, evaluation, and engineering decisions](https://angrove.app/case-study.html)
+- [Technical case study](https://github.com/rbaltodano/Angrove-iOS/blob/main/Documentation/Case-Study.md) and [evaluation methodology](https://github.com/rbaltodano/Angrove-iOS/blob/main/Documentation/Evaluation.md)
+- [Development notes](https://angrove.app/blog/): dated experiments with methods and limitations
 
-The project is not currently a hosted consumer service. Some model weights,
-corpora, and generated assets are maintained separately from the source code.
+## What I work with
 
-## About
+- **Apple platforms:** Swift, SwiftUI, Swift Testing, Xcode, App Store and TestFlight delivery
+- **On-device ML:** LiteRT-LM, Core ML, MLX, quantization, model evaluation
+- **Retrieval:** sentence embeddings, vector similarity, source-grounded generation
+- **Tooling:** Python, GitHub Actions, Figma
 
-Built by [Ryan Baltodano](https://github.com/rbaltodano).
+Tampa, FL · Open to applied AI and iOS engineering roles
