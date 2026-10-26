@@ -2,7 +2,7 @@
 
 Applied AI engineer and product designer building **[Angrove](https://angrove.app)**, a free, private study app for iPhone and Mac that runs its language model entirely on the device.
 
-**[Try the iPhone beta on TestFlight](https://testflight.apple.com/join/qHDFeAUa)** · [Watch the 1:49 demo](https://angrove.app/case-study.html#demo-conversation) · [Résumé (PDF)](https://angrove.app/assets/Ryan-Baltodano-Resume.pdf)
+**[Read the case study](https://angrove.app/case-study.html)** · [Try the iPhone beta on TestFlight](https://testflight.apple.com/join/qHDFeAUa) · [Watch the 1:49 demo](https://angrove.app/case-study.html#demo-conversation) · [Résumé (PDF)](https://angrove.app/assets/Ryan-Baltodano-Resume.pdf)
 
 ## What I'm working on
 
