@@ -52,6 +52,14 @@ A local-first desktop research tool for mapping document collections, searching 
 
 **Working prototype, tested locally on Apple Silicon macOS.** Windows and Linux remain unverified. Gap candidates indicate limited coverage within the imported collection; they are not validated discoveries. The repo includes a reproducible fictional demo.
 
+### inVectus website
+
+I also designed and built [invectus.app](https://invectus.app). Its closing section pairs a quiet star field, Earth’s illuminated horizon, and a rounded footer, with restrained typography around the build instructions and local-first message.
+
+[![The inVectus website: Run It on Your Own Computer above Earth’s illuminated horizon, with a rounded footer](assets/invectus-website.png)](https://invectus.app)
+
+[Visit the website](https://invectus.app) · [Website source](https://github.com/rbaltodano/invectus-website) · [Portfolio](https://ryanbaltodano.com/#invectus-website)
+
 ## Repositories
 
 Direct links to every public repository. Start with Angrove-iOS or inVectus to review the application code.
@@ -59,6 +67,7 @@ Direct links to every public repository. Start with Angrove-iOS or inVectus to r
 | Repository | What it is |
 | --- | --- |
 | [inVectus](https://github.com/rbaltodano/inVectus) | Desktop research workspace and CLI: Rust, Tauri, React/TypeScript, local embeddings, and collection analysis |
+| [invectus-website](https://github.com/rbaltodano/invectus-website) | inVectus product website: visual design, responsive HTML/CSS, and interactive collection map |
 | [Angrove-iOS](https://github.com/rbaltodano/Angrove-iOS) | The iPhone and Mac apps: on-device runtime, retrieval, encrypted persistence, and the Insight Tree |
 | [Angrove-Foundations](https://github.com/rbaltodano/Angrove-Foundations) | Product, design, and model-integration documentation, plus case studies |
 | [Angrove-Backend](https://github.com/rbaltodano/Angrove-Backend) | Offline Python tooling: corpus preparation, model conversion, and evaluation |
